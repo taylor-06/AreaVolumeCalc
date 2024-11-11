@@ -20,8 +20,6 @@ namespace AreaVolumeCalc
         public Form1()
         {
             InitializeComponent();
-
-
         }
 
         private void btn_CalcArea_Click(object sender, EventArgs e)
