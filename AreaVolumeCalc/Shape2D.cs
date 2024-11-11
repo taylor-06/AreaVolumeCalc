@@ -11,5 +11,6 @@ namespace AreaVolumeCalc
         public string shapeName;
         public double width;
         public double height;
+        public double area;
     }
 }

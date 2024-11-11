@@ -8,6 +8,6 @@ namespace AreaVolumeCalc
 {
     internal interface IArea
     {
-        public double Area();
+        public double Area(double width, double height);
     }
 }
