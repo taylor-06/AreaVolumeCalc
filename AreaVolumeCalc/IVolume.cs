@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace AreaVolumeCalc
 {
-    internal interface IArea
+    internal interface IVolume
     {
-        public double Area(double width, double height, double radius);
+        public double Volume(double width, double height, double radius, double depth);
     }
 }

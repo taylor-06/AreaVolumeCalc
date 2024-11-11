@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace AreaVolumeCalc
 {
-    internal class Rectangle : Shape2D, IArea
+    internal class Cube : Shape3D, IVolume
     {
-        public double Area(double width, double height, double radius)
+        public double Volume(double width, double height, double radius, double depth)
         {
-            return width * height;
+            return width * height * depth;
         }
     }
 }
