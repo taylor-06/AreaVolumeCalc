@@ -13,16 +13,23 @@ namespace AreaVolumeCalc
             InitializeComponent();
         }
 
-        private void textBox1_Leave(object sender, EventArgs e)
+        private void btn_CalcArea_Click(object sender, EventArgs e)
         {
-            width = double.Parse(textBox1.Text);
-            label1.Text = "Area = " + rectangle.Area(width, height);
-        }
+            width = double.Parse(areaWidthText.Text);
+            height = double.Parse(areaHeightText.Text);
 
-        private void textBox2_Leave(object sender, EventArgs e)
-        {
-            height = double.Parse(textBox2.Text);
-            label1.Text = "Area = " + rectangle.Area(width, height);
+            if (shape2DSelector.Text == "Rectangle")
+            {
+                areaResult.Text = "Area = " + rectangle.Area(width, height);
+            }
+            else if (shape2DSelector.Text == "Ellipse")
+            {
+                areaResult.Text = "Function Unavailable";
+            }
+            else
+            {
+                areaResult.Text = "Function Unavailable";
+            }
         }
     }
 }
